@@ -5,6 +5,9 @@ import { storybookVis } from 'storybook-addon-vis/vitest-plugin';
 
 // https://vitejs.dev/config/
 export default {
+  server: {
+    allowedHosts: ['host.docker.internal'], // does not work?
+  },
   test: {
     projects: [
       {
