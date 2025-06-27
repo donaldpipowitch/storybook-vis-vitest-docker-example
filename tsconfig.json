@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    // see https://www.totaltypescript.com/tsconfig-cheat-sheet
+    // Base
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    // "target": "es2022", // custom change! see below
+    "allowJs": true,
+    "resolveJsonModule": true,
+    "moduleDetection": "force",
+    "isolatedModules": true,
+    "verbatimModuleSyntax": true,
+
+    // Strictness
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+
+    // Not Transpiling
+    "module": "preserve",
+    "noEmit": true,
+
+    // Environment
+    "lib": ["es2022", "dom", "dom.iterable"],
+
+    // below: custom additions not from cheat sheet
+    "target": "ESNext",
+    "jsx": "react-jsx",
+    "baseUrl": "."
+  }
+}
